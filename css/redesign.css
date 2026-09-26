@@ -190,3 +190,6 @@ section.max-w-6xl div.bg-white.border h2::before{
 @media(min-width:768px){.r-fab span{display:inline}}
 
 footer.bg-white{border-top:1px solid #e6ebf5}
+
+/* ===== Rodapé da home (pós-remoção do selo BrokerLink) ===== */
+.r-footer{background:#fff;border-top:1px solid #e5e7eb}
