@@ -193,3 +193,7 @@ footer.bg-white{border-top:1px solid #e6ebf5}
 
 /* ===== Rodapé da home (pós-remoção do selo BrokerLink) ===== */
 .r-footer{background:#fff;border-top:1px solid #e5e7eb}
+
+/* Logo pessoal na topbar (substitui marca BrokerLink) */
+.r-logo em{display:block;font-style:normal;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9ca3af;font-weight:600;line-height:1}
+.r-logo-mark{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#0f766e,#065f46);color:#fff;font-weight:800;font-size:13px;letter-spacing:.5px;flex-shrink:0}
