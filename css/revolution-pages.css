@@ -1,0 +1,48 @@
+/* ============================================================
+   REVOLUÇÃO — Páginas de imóvel (detalhe)
+   Mesma identidade "dark-lux" da home, aplicada às páginas /imoveis/*.
+   ============================================================ */
+body{
+  --p-bg:#070b14;--p-surface:rgba(255,255,255,.045);--p-line:rgba(255,255,255,.1);
+  --p-text:#eef3fb;--p-muted:#93a3c0;--p-gold:#e8c476;--p-gold-deep:#c9a24d;--p-mint:#3ddc97;
+  background:var(--p-bg)!important;color:var(--p-text)!important;
+  font-family:"Inter","Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(900px 500px at 85% -10%,rgba(232,196,118,.12),transparent 60%),
+    radial-gradient(1000px 700px at -10% 40%,rgba(37,78,158,.2),transparent 60%),
+    var(--p-bg);
+}
+/* containers claros viram vidro escuro */
+.bg-gray-50,.bg-white{background:rgba(13,19,33,.72)!important;color:var(--p-text)}
+.border,.border-b,.border-t{border-color:var(--p-line)!important}
+.rounded-xl,.rounded-2xl{box-shadow:0 24px 60px rgba(0,0,0,.5)}
+h1,h2,h3,strong{color:#fff!important}
+.text-gray-900,.text-gray-800,.text-gray-700{color:#dbe5f5!important}
+.text-gray-600,.text-gray-500,.text-gray-400,p{color:var(--p-muted)!important}
+.text-primary,.font-bold.text-primary{color:var(--p-gold)!important}
+/* chips/tags de características */
+.bg-blue-50,.bg-gray-100,.bg-green-50,.bg-yellow-50{background:var(--p-surface)!important;border:1px solid var(--p-line)}
+/* botões */
+a[class*="bg-green"],button[class*="bg-green"]{
+  background:linear-gradient(135deg,#3ddc97,#1faa50)!important;color:#06240f!important;
+  font-weight:900;border-radius:999px!important;box-shadow:0 14px 34px rgba(61,220,151,.35);
+}
+a[class*="border"][class*="rounded"]:not([class*="bg-green"]){
+  border-color:var(--p-line)!important;color:var(--p-text)!important;background:var(--p-surface);
+}
+/* inputs */
+input,textarea,select{
+  background:rgba(255,255,255,.05)!important;border:1px solid var(--p-line)!important;
+  color:#fff!important;border-radius:12px!important;
+}
+input::placeholder,textarea::placeholder{color:#5f7091!important}
+input:focus,textarea:focus{outline:none;border-color:rgba(232,196,118,.7)!important;box-shadow:0 0 0 4px rgba(232,196,118,.15)}
+/* links e navegação */
+a{text-decoration:none}
+a:hover{color:var(--p-gold)!important}
+hr{border-color:var(--p-line)}
+::selection{background:rgba(232,196,118,.35);color:#fff}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--p-gold);outline-offset:2px;border-radius:8px}
